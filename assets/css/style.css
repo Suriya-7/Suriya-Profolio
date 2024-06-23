@@ -1125,18 +1125,20 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.download-cv button {
   background: #5D3FD3;
-  border: 0;
   padding: 10px 35px;
-  color: #fff;
   transition: 0.4s;
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: #5D3FD3;
+.download-cv button a{
+  color: #fff;
 }
+
+/* .download-cv button:hover {
+  background: #5D3FD3;
+} */
 
 @keyframes animate-loading {
   0% {
