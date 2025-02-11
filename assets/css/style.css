@@ -279,7 +279,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 15%;
-  background: none; /* Remove the background */
+  background: none;
+  flex-wrap: wrap;
 }
 
 #hero img {
@@ -293,10 +294,6 @@ h6 {
   max-width: 50%;
   padding-right: 40px;
   color: #45505b;
-}
-
-#hero:before {
-  content: none; /* Remove the semi-transparent overlay */
 }
 
 #hero h1 {
@@ -336,21 +333,37 @@ h6 {
   color: #5D3FD3;
 }
 
+.download-cv button {
+  background: #5D3FD3;
+  padding: 10px 35px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.download-cv button a {
+  color: #fff;
+}
+
 @media (max-width: 992px) {
   #hero {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
   }
 
   #hero img {
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 20px;
   }
 
+  #hero .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
   #hero h1 {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 48px;
+    line-height: 52px;
   }
 
   #hero p {
@@ -360,16 +373,31 @@ h6 {
   }
 }
 
-.download-cv button {
-  background: #5D3FD3;
-  padding: 10px 35px;
-  transition: 0.4s;
-  border-radius: 50px;
+@media (max-width: 600px) {
+  #hero {
+    padding-top: 80px; /* Add top padding for better positioning */
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #hero p {
+    font-size: 18px;
+  }
+
+  .download-cv button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #hero img {
+    max-width: 100%;
+  }
 }
 
-.download-cv button a{
-  color: #fff;
-}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1098,10 +1126,26 @@ section {
   .contact .info,
   .contact form {
     width: 100%;
+    margin-left: 0;
   }
 
   .name-group {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact form {
+    padding: 20px;
+  }
+
+  .contact form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .name-group input {
+    width: 100%;
   }
 }
 
