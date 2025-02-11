@@ -75,8 +75,9 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+      <div class="hero-content" data-aos="zoom-in" data-aos-delay="100">
         <h1>Suriya</h1>
         <p>
           I'm
@@ -111,7 +112,10 @@
           ></a>
         </div>
       </div>
+
+      <img src="assets/img/Home.jpg" alt="Home" class="hero-image" />
     </section>
+
     <!-- End Hero -->
 
     <main id="main">
@@ -121,39 +125,33 @@
           <div class="section-title">
             <h2>About</h2>
             <p>
-              I am Suriya, a Computer Science and Engineering graduate from IFET
-              College of Engineering, with a deep passion for software
-              development and web technologies. My journey began at 18 when I
-              completed the
-              <span class="fw-bold">CCNA: Introduction to Networking</span>
-              course from Cisco, which laid a strong foundation in networking
-              concepts. Over time, I broadened my skill set by learning
-              <span class="fw-bold">C, Python, Django, SQL, React JS</span>, and
-              front-end development technologies like
-              <span class="fw-bold">HTML, CSS, Bootstrap</span>, and
-              <span class="fw-bold">Tailwind CSS</span>.
-
-              <br /><br />
-
-              Additionally, I have gained experience with modern frameworks such
-              as
-              <span class="fw-bold">Next.js</span> and
-              <span class="fw-bold">Vite</span>. My interest in full-stack
-              development has led me to build and optimize web applications,
-              gaining valuable insights into user experience, backend logic, and
-              security considerations. I continuously seek opportunities to
-              enhance my technical expertise and deliver scalable, secure, and
-              user-friendly applications.
+              Hello! I'm <span class="fw-bold">Suriya</span>, a Computer Science
+              and Engineering graduate from
+              <span class="fw-bold">IFET College of Engineering</span>, driven
+              by a passion for software development and web technologies.
             </p>
 
-            <br />
+            <p>
+              My journey began at the age of 18 when I completed the
+              <span class="fw-bold">CCNA: Introduction to Networking</span>
+              course from Cisco, which provided me with a strong foundation in
+              networking concepts. Over the years, I have continuously explored
+              new technologies and honed my skills by building and optimizing
+              web applications.
+            </p>
 
             <p>
-              For me,
+              My experiences have given me valuable insights into user
+              experience, backend logic, and security considerations. I am
+              always eager to learn, adapt, and push the boundaries to deliver
+              impactful and user-friendly solutions.
+            </p>
+
+            <p>
+              One of my core beliefs is that
               <span class="fw-bold">hustling is the best form of education</span
-              >. I thrive on identifying opportunities, exploring them, and
-              learning what's needed to seize them successfully every single
-              day, 24/7.
+              >. I thrive on identifying opportunities, diving deep into them,
+              and learning what's required to succeed every single day.
             </p>
           </div>
         </div>
@@ -493,31 +491,30 @@
             <h2>Contact</h2>
           </div>
 
-          <div class="row mt-1">
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
-                  <p>Tamil Nadu, India</p>
-                </div>
+          <div class="contact-container">
+            <!-- Contact Form -->
+            <form
+              id="contactForm"
+              onsubmit="event.preventDefault(); validateAndSend();"
+            >
+              <input id="firstName" type="text" placeholder="First Name" />
+              <span id="firstNameError" class="error"></span>
 
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>thesuriya.me@gamil.com</p>
-                </div>
+              <input id="lastName" type="text" placeholder="Last Name" />
+              <span id="lastNameError" class="error"></span>
 
-                <div class="phone">
-                  <i class="bi bi-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+91 9345262660</p>
-                </div>
-              </div>
-            </div>
+              <input id="email" type="email" placeholder="Email" />
+              <span id="emailError" class="error"></span>
+
+              <textarea id="message" placeholder="Message"></textarea>
+              <span id="messageError" class="error"></span>
+
+              <button type="submit">Send Message</button>
+            </form>
           </div>
         </div>
       </section>
+
       <!-- End Contact Section -->
     </main>
     <!-- End #main -->
@@ -584,5 +581,13 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+
+    <!-- Toast Notification -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>
