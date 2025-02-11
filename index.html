@@ -497,10 +497,11 @@
               id="contactForm"
               onsubmit="event.preventDefault(); validateAndSend();"
             >
-              <input id="firstName" type="text" placeholder="First Name" />
+              <div class="name-group">
+                <input id="firstName" type="text" placeholder="First Name" />
+                <input id="lastName" type="text" placeholder="Last Name" />
+              </div>
               <span id="firstNameError" class="error"></span>
-
-              <input id="lastName" type="text" placeholder="Last Name" />
               <span id="lastNameError" class="error"></span>
 
               <input id="email" type="email" placeholder="Email" />
