@@ -1061,6 +1061,65 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+
+/* Projects Section Styling */
+#projects {
+  padding: 60px 0;
+}
+
+#projects .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#projects .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #272829;
+}
+
+#projects .section-title p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#projects .icon-box {
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#projects .icon-box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+}
+
+#projects .icon-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #5D3FD3; /* your theme color */
+  font-family: "Raleway", sans-serif;
+}
+
+#projects .icon-box p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact-container {
